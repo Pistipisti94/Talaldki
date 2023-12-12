@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFC107">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/Eletek"
+    android:layout_alignParentTop="true"
+    android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/elet1"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/heart"
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/elet2"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/elet1"
+            android:src="@drawable/heart"
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,ObsoleteLayoutParam"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/elet3"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/elet2"
+            android:contentDescription="TODO"
+            android:src="@drawable/heart"
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,ObsoleteLayoutParam" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Tipp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Eletek"
+        android:layout_marginTop="20dp"
+        android:autofillHints="creditCardNumber"
+        android:hint="@string/_1_10_ig_sz_m"
+        android:inputType="number"
+        android:textSize="40sp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/Ellenorzes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tipp"
+        android:layout_marginTop="22dp"
+        android:text="@string/nyomod"
+        tools:ignore="VisualLintButtonSize"
+        android:textColor="#FF0000"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ellenorzes"
+        android:id="@+id/eredmeny"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:textColor="@color/black"/>
+</RelativeLayout>
